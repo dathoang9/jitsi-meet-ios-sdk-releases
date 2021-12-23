@@ -55,4 +55,18 @@
  */
 - (void)enterPictureInPicture:(NSDictionary *)data;
 
+/**
+ * Called when videoMuted state changed.
+ *
+ * The `data` dictionary contains a `muted` key with state of the videoMuted for the localParticipant.
+ */
+- (void)videoMutedChanged:(NSDictionary *)data;
+
+/**
+ * Called when audioMuted state changed.
+ *
+ * The `data` dictionary contains a `muted` key with state of the audioMuted for the localParticipant.
+ */
+- (void)audioMutedChanged:(NSDictionary *)data;
+
 @end

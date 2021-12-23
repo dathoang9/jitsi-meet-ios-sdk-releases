@@ -36,5 +36,8 @@
  * Leaves the currently active conference.
  */
 - (void)leave;
+- (void)setVideoMuted:(BOOL)muted;
+- (void)setAudioMuted:(BOOL)muted;
+- (void)setSpeaker:(BOOL)earpiece;
 
 @end
